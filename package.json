@@ -1,0 +1,22 @@
+{
+  "name": "jstspractice",
+  "version": "1.0.0",
+  "description": "JS/TS Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jordanafoster6/jstsPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jordanafoster6/jstsPractice/issues"
+  },
+  "homepage": "https://github.com/Jordanafoster6/jstsPractice#readme",
+  "dependencies": {
+    "typescript": "^3.9.7"
+  }
+}
