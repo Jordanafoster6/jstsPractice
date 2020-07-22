@@ -29,8 +29,7 @@ console.log('Bomb Squad Check the Area');
 console.log('-----------------------------');
 
 perimiterCheck.map(possibleBomb => {
-  bombs = findBomb(possibleBomb) ? bombs + 1 : bombs;
-  findBomb(possibleBomb) ? console.log("Probably a bomb dude.") : console.log("It's not a bomb Mike.. relax.");
+  findBomb(possibleBomb) ? (console.log("Probably a bomb dude."), bombs = bombs + 1) : console.log("It's not a bomb Mike.. relax.");
 });
 
 console.log('-----------------------------');
