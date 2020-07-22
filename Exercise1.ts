@@ -1,12 +1,12 @@
 
 
-function findTerm(searchValue: string, checkString: string): boolean {
-    return RegExp(`\\b(\\w*${searchValue}\\w*)\\b`, 'g').test(checkString);
+function findTerm(searchValue: string, checkString: string): number {
+    return checkString.indexOf(searchValue);
 }
 
-function findBomb(checkString: string) {
+function findBomb(checkString: string): boolean {
   const check: string = 'Bomb';
-  return findTerm(check.toLowerCase(), checkString.toLowerCase());
+  return findTerm(check.toLowerCase(), checkString.toLowerCase()) > 0 ?? true;
 }
 
 const perimiterCheck: string[] = [
