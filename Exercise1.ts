@@ -9,7 +9,7 @@ function findBomb(checkString: string): boolean {
   return findTerm(check.toLowerCase(), checkString.toLowerCase()) > 0 ?? true;
 }
 
-const perimiterCheck: string[] = [
+const perimeterCheck: string[] = [
   'hello world', // no bomb
   'hello bomb world',
   'hellbombo world',
@@ -28,7 +28,7 @@ console.log('-----------------------------');
 console.log('Bomb Squad Check the Area');
 console.log('-----------------------------');
 
-perimiterCheck.map(possibleBomb => {
+perimeterCheck.map(possibleBomb => {
   findBomb(possibleBomb) ? (console.log("Probably a bomb dude."), bombs = bombs + 1) : console.log("It's not a bomb Mike.. relax.");
 });
 
