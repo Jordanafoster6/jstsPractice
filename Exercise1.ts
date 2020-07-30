@@ -1,4 +1,6 @@
 
+// Exercise: "Find the Bomb"
+// Link: https://edabit.com/challenge/r4hycBjiBNMs6AAjq
 
 function findTerm(searchValue: string, checkString: string): number {
     return checkString.indexOf(searchValue);
